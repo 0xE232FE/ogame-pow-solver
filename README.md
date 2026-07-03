@@ -86,9 +86,17 @@ go build -o powsolve .
 Sample output (validated against the wasm module):
 ```
 algorithm: sha-256, 10 challenge(s)
-[0] salt=c8ea7be2079a... target=00000 nonce=817404 hash=000000060ba5022e... valid=true
-...
-solved 10 challenge(s) in 16.09s   # single-core sandbox; scales with core count
+[0] salt=c8ea7be2079a... target=00000 nonce=817404 hash=000000060ba5022ee049388cd6e801fd4b99986b8ec38bdb198b2bd62e1ae880 valid=true
+[1] salt=c7bbcc3a652f... target=00000 nonce=984221 hash=000001e9aeda84c7ac3cfdb54ce1813ed0c6a0e6616502be3e031fa98aff485a valid=true
+[2] salt=4cb78a67c9ae... target=00000 nonce=2472995 hash=000007ae3ca0888fe0a88079277d3cd34bf7476b5238f61a1792827f3cd75c63 valid=true
+[3] salt=c7cbd427f4d3... target=00000 nonce=519766 hash=0000099f05b614818e209890ec2e1afe533bc9f3cdce91fa4c509dd7de545bfe valid=true
+[4] salt=2bacbc8d2ef9... target=00000 nonce=552678 hash=00000687443522b6c49232a4c34d36aa1e5d765d3e66bfedb7182996136304bd valid=true
+[5] salt=0d08af1891eb... target=00000 nonce=2034183 hash=00000f83a91f496973f351e6cb79cb2453fd8857ac76398864212126bd89b9e3 valid=true
+[6] salt=ebaa3f448267... target=00000 nonce=3952503 hash=00000906152cd2a5f66036c5f12daeb49a9c38d35f45c3c3b1d63f30146d3bc1 valid=true
+[7] salt=9a438ebae1ed... target=00000 nonce=363315 hash=00000b7be605b58e6a30d22c44711d0580e151ad608a80c06ed0e53108109f77 valid=true
+[8] salt=a7fbc3f7119f... target=00000 nonce=546293 hash=00000df1fa2915126129a4db5ecada28ee11098fbeb0422beb3e30bda1fe2358 valid=true
+[9] salt=3d73a4640de7... target=00000 nonce=320787 hash=00000654a5108a86e09bf7ca1a573e87d68d96b8bbd8abe353ecdf9da8e0f0f7 valid=true
+solved 10 challenge(s) in 2.3902907s
 ```
 ---
 5. Instrumentation Payload (Fingerprinting Probes)
