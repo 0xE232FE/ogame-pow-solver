@@ -1,4 +1,3 @@
-```markdown
 # Reverse Engineering Analysis of a Proof-of-Work Challenge Mechanism Employing WebAssembly
 
 ## 1. Introduction
@@ -123,4 +122,3 @@ The combination of a computational PoW gate with environment-characterization pr
 ## 6. Conclusions
 
 The examined `.pow` artifact packages a conventional hashcash-style proof-of-work challenge set together with an independent browser-fingerprinting instrumentation payload. The WebAssembly module implements a pure, optimized SHA-256 brute-force search of the form \(\operatorname{SHA-256}(\textit{salt} \Vert \operatorname{dec}(\textit{nonce}))\) subject to a hexadecimal prefix target, and contains no fingerprinting logic. The algorithm was confirmed through both black-box execution under Wasmtime and independent Python verification, and was subsequently reimplemented in Go with identical output. The instrumentation component constitutes a separate, browser-only layer and was deliberately excluded from any analysis of spoofing or bypass techniques.
-```
